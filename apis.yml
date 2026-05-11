@@ -1,0 +1,57 @@
+aid: userback
+name: Userback
+description: >-
+  Userback is a customer feedback platform that captures visual feedback,
+  screenshots, screen recordings, and bug reports directly from in-product
+  widgets installed on websites and web applications. The platform offers
+  feedback boards, session replays, and integrations with project management
+  and developer tools to streamline customer-driven product development.
+  Userback's REST API uses Bearer token authentication for managing feedback,
+  projects, users, and account data.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Customer Feedback
+  - Bug Reporting
+  - Visual Feedback
+  - Session Replay
+  - Product Management
+  - SaaS
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/userback/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: userback:rest-api
+    name: Userback REST API
+    description: >-
+      REST API for managing Userback feedback items, projects, users, tags,
+      and account resources. Uses Bearer token authentication; partner
+      integrations use an X-Partner-Code header.
+    humanURL: https://docs.userback.io/reference
+    baseURL: https://rest.userback.io/1.0
+    tags:
+      - Customer Feedback
+      - Bug Reporting
+      - Visual Feedback
+    properties:
+      - type: Documentation
+        url: https://docs.userback.io/reference
+      - type: Authentication
+        url: https://docs.userback.io/reference/authentication
+      - type: Overview
+        url: https://docs.userback.io/reference/overview
+
+common:
+  - type: Website
+    url: https://www.userback.io
+  - type: Documentation
+    url: https://docs.userback.io
+  - type: Pricing
+    url: https://www.userback.io/pricing
+  - type: Sign Up
+    url: https://app.userback.io/signup
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
