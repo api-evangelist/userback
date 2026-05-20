@@ -44,6 +44,10 @@ apis:
         url: https://docs.userback.io/reference/overview
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/userback
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/userback
   - type: Website
     url: https://www.userback.io
   - type: Documentation
