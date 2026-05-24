@@ -56,6 +56,8 @@ common:
     url: https://www.userback.io/pricing
   - type: SignUp
     url: https://app.userback.io/signup
+  - type: LLMsTxt
+    url: https://docs.userback.io/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
