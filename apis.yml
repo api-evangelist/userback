@@ -9,7 +9,7 @@ description: >-
   Userback's REST API uses Bearer token authentication for managing feedback,
   projects, users, and account data.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Customer Feedback
   - Bug Reporting
