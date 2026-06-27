@@ -54,9 +54,9 @@ common:
     url: https://docs.userback.io
   - type: Pricing
     url: https://www.userback.io/pricing
-  - type: SignUp
+  - type: Signup
     url: https://app.userback.io/signup
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.userback.io/llms.txt
 maintainers:
   - FN: Kin Lane
