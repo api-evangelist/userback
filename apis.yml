@@ -44,6 +44,10 @@ apis:
         url: https://docs.userback.io/reference/overview
 
 common:
+  - type: DomainSecurity
+    url: security/userback-domain-security.yml
+  - type: Authentication
+    url: authentication/userback-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/userback
   - type: LinkedIn
@@ -58,6 +62,8 @@ common:
     url: https://app.userback.io/signup
   - type: LlmsText
     url: https://docs.userback.io/llms.txt
+  - url: https://www.userback.io/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
