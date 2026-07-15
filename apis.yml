@@ -44,6 +44,8 @@ apis:
         url: https://docs.userback.io/reference/overview
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/userback-agentic-access.yml
   - type: DomainSecurity
     url: security/userback-domain-security.yml
   - type: Authentication
