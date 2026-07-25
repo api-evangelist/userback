@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  title: Userback REST Feedback Projects API
+  description: REST API for managing Userback feedback items, comments, and related customer feedback resources. Authentication uses a Bearer token (API token) generated from the Userback dashboard.
+  version: '1.0'
+  contact:
+    name: Userback API Support
+    url: https://docs.userback.io/reference
+servers:
+- url: https://rest.userback.io/1.0
+  description: Production
+security:
+- BearerAuth: []
+tags:
+- name: Projects
+  description: Userback projects (workspaces grouping feedback widgets).
+paths:
+  /projects/{id}:
+    parameters:
+    - name: id
+      in: path
+      required: true
+      description: Project identifier.
+      schema:
+        type: string
+    get:
+      tags:
+      - Projects
+      summary: Retrieve project
+      description: Retrieves a project by id.
+      operationId: getProject
+      responses:
+        '200':
+          description: Project.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+        '404':
+          $ref: '#/components/responses/NotFound'
+components:
+  schemas:
+    Project:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+  responses:
+    NotFound:
+      description: Resource not found.
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Token
+      description: Pass the Userback API token in the Authorization header as `Bearer <YOUR_API_TOKEN>`. Tokens are managed from the Userback dashboard.
