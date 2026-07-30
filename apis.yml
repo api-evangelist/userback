@@ -9,7 +9,19 @@ description: >-
   Userback's REST API uses Bearer token authentication for managing feedback,
   projects, users, and account data.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/userback.png
 tags:
   - Customer Feedback
   - Bug Reporting
@@ -23,26 +35,54 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: userback:rest-api
-    name: Userback REST API
-    description: >-
-      REST API for managing Userback feedback items, projects, users, tags,
-      and account resources. Uses Bearer token authentication; partner
-      integrations use an X-Partner-Code header.
-    humanURL: https://docs.userback.io/reference
-    baseURL: https://rest.userback.io/1.0
-    tags:
-      - Customer Feedback
-      - Bug Reporting
-      - Visual Feedback
-    properties:
-      - type: Documentation
-        url: https://docs.userback.io/reference
-      - type: Authentication
-        url: https://docs.userback.io/reference/authentication
-      - type: Overview
-        url: https://docs.userback.io/reference/overview
-
+- aid: userback:rest-api
+  name: Userback REST API
+  description: >-
+    REST API for managing Userback feedback items, projects, users, tags, and account resources. Uses
+    Bearer token authentication; partner integrations use an X-Partner-Code header.
+  humanURL: https://docs.userback.io/reference
+  baseURL: https://rest.userback.io/1.0
+  tags:
+  - Customer Feedback
+  - Bug Reporting
+  - Visual Feedback
+  properties:
+  - type: Documentation
+    url: https://docs.userback.io/reference
+  - type: Authentication
+    url: https://docs.userback.io/reference/authentication
+  - type: Overview
+    url: https://docs.userback.io/reference/overview
+- aid: userback:userback-feedback-api
+  name: Userback Feedback API
+  description: Feedback items captured by Userback widgets.
+  humanURL: https://docs.userback.io/reference
+  baseURL: https://rest.userback.io/1.0
+  tags:
+  - Feedback
+  properties:
+  - type: OpenAPI
+    url: openapi/userback-feedback-api-openapi.yml
+- aid: userback:userback-feedback-comments-api
+  name: Userback Feedback Comments API
+  description: Comments attached to feedback items.
+  humanURL: https://docs.userback.io/reference
+  baseURL: https://rest.userback.io/1.0
+  tags:
+  - Feedback Comments
+  properties:
+  - type: OpenAPI
+    url: openapi/userback-feedback-comments-api-openapi.yml
+- aid: userback:userback-projects-api
+  name: Userback Projects API
+  description: Userback projects (workspaces grouping feedback widgets).
+  humanURL: https://docs.userback.io/reference
+  baseURL: https://rest.userback.io/1.0
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/userback-projects-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/userback-agentic-access.yml
