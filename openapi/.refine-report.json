@@ -1,0 +1,18 @@
+{
+  "provider": "userback",
+  "sources": [
+    "userback-feedback-api-openapi.yml",
+    "userback-feedback-comments-api-openapi.yml",
+    "userback-projects-api-openapi.yml"
+  ],
+  "outputs": [
+    "userback-feedback-api-openapi.yml",
+    "userback-feedback-comments-api-openapi.yml",
+    "userback-projects-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
