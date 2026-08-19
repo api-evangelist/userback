@@ -1,0 +1,137 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Userback REST Feedback Feedback Comments API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Feedback Comments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List feedback comments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.userback.io/1.0/feedback/comment",
+            "params": [
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "Page number for pagination."
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Maximum number of items per page."
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "Sort expression."
+              },
+              {
+                "name": "filter",
+                "value": "",
+                "type": "query",
+                "description": "Filter expression."
+              }
+            ]
+          },
+          "docs": "Lists feedback comments with pagination and filtering."
+        },
+        {
+          "info": {
+            "name": "Create feedback comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.userback.io/1.0/feedback/comment",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Creates a new comment on a feedback item."
+        },
+        {
+          "info": {
+            "name": "Retrieve feedback comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.userback.io/1.0/feedback/comment/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Feedback comment identifier."
+              }
+            ]
+          },
+          "docs": "Retrieves a specific feedback comment by id."
+        },
+        {
+          "info": {
+            "name": "Update feedback comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://rest.userback.io/1.0/feedback/comment/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Feedback comment identifier."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Updates an existing feedback comment."
+        },
+        {
+          "info": {
+            "name": "Delete feedback comment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://rest.userback.io/1.0/feedback/comment/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Feedback comment identifier."
+              }
+            ]
+          },
+          "docs": "Deletes a feedback comment."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

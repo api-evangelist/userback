@@ -1,0 +1,43 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Userback REST Feedback Projects API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve project",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.userback.io/1.0/projects/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Project identifier."
+              }
+            ]
+          },
+          "docs": "Retrieves a project by id."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

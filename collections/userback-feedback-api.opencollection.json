@@ -1,0 +1,76 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Userback REST Feedback API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Feedback",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List feedback",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rest.userback.io/1.0/feedback",
+            "params": [
+              {
+                "name": "page",
+                "value": "",
+                "type": "query",
+                "description": "Page number for pagination."
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Maximum number of items per page."
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "Sort expression."
+              },
+              {
+                "name": "filter",
+                "value": "",
+                "type": "query",
+                "description": "Filter expression."
+              }
+            ]
+          },
+          "docs": "Lists available feedback items."
+        },
+        {
+          "info": {
+            "name": "Create feedback",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://rest.userback.io/1.0/feedback",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Creates a feedback item."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,64 @@
+# Userback Documentation Documentation
+
+> Developer documentation for Userback to embed feedback widgets, capture bug reports, run micro-surveys, and manage user feedback via JavaScript SDK, REST API, and webhooks.
+
+## Guides
+- [Welcome to Userback](https://docs.userback.io/docs/welcome.md)
+- [Developer Quickstart Guide](https://docs.userback.io/docs/quickstart-guide.md): Get Userback installed and collecting feedback in under 5 minutes.
+- [Install Userback Code](https://docs.userback.io/docs/widget-installation-methods.md)
+- [NPM](https://docs.userback.io/docs/npm.md)
+- [React](https://docs.userback.io/docs/react.md)
+- [Vue](https://docs.userback.io/docs/vue.md)
+- [Next.js](https://docs.userback.io/docs/nextjs.md)
+- [Angular](https://docs.userback.io/docs/angularjs.md)
+- [iOS & Android](https://docs.userback.io/docs/ios-android.md)
+- [Userback Access Token](https://docs.userback.io/docs/widget-access-token.md)
+- [Google Tag Manager](https://docs.userback.io/docs/google-tag-manager.md)
+- [Userback MCP](https://docs.userback.io/docs/userback-mcp.md)
+- [Single Page Apps](https://docs.userback.io/docs/integrate-with-single-page-app.md)
+- [JavaScript SDK](https://docs.userback.io/docs/javascript-sdk.md)
+- [Webhooks](https://docs.userback.io/docs/webhooks.md)
+- [User Identification](https://docs.userback.io/docs/user-identification.md)
+- [Bind Widget to Button](https://docs.userback.io/docs/bind-widget-to-button.md)
+- [Prefill Form Fields](https://docs.userback.io/docs/prefill-fields.md)
+- [Dynamic Language](https://docs.userback.io/docs/dynamic-language.md)
+- [Handling Multiple Feedback Widgets](https://docs.userback.io/docs/handling-multiple-feedback-widgets.md): If your account has more than one feedback widget configured (e.g. separate projects for different products, apps, or sections of your site), you can target a specific one directly from the JavaScript SDK using its `project_key`.
+
+## API Reference
+- [Overview](https://docs.userback.io/reference/overview.md): Userback REST API
+- [Common use cases](https://docs.userback.io/reference/common-use-cases.md)
+- [Authentication](https://docs.userback.io/reference/authentication.md)
+- [Pagination](https://docs.userback.io/reference/pagination.md)
+- [Get a comment](https://docs.userback.io/reference/getfeedbackcomment.md): Retrieves a Feedback comment by Id
+- [Update a comment](https://docs.userback.io/reference/updatefeedbackcomment.md): Updates feedback comment
+- [Delete a comment](https://docs.userback.io/reference/deletefeedbackcomment.md): Deletes a feedback comment
+- [List comments from a feedback](https://docs.userback.io/reference/listfeedbackcomments.md): Lists available feedback comments
+- [Comment on a feedback](https://docs.userback.io/reference/createfeedbackcomment.md): Creates a feedback comment
+- [Create FeedbackScreenshots](https://docs.userback.io/reference/createscreenshot.md): Create new FeedbackScreenshots
+- [Get a feedback](https://docs.userback.io/reference/getfeedback.md): Retrieves a feedback by Id
+- [Update a feedback](https://docs.userback.io/reference/updatefeedback.md): Updates feedback
+- [Delete a feedback](https://docs.userback.io/reference/deletefeedback.md): Deletes a feedback
+- [List feedbacks](https://docs.userback.io/reference/listfeedbacks.md): Lists available feedbacks
+- [Create a feedback](https://docs.userback.io/reference/createfeedback.md): Creates a feedback
+- [Retrieve a Member by Id](https://docs.userback.io/reference/getmember.md): Retrieves a Member by Id
+- [List available members](https://docs.userback.io/reference/listmembers.md): Lists available Members
+- [Retrieve a project by Id](https://docs.userback.io/reference/getproject.md): Retrieves a project by Id
+- [List available projects](https://docs.userback.io/reference/listprojects.md): Lists available projects
+- [Get a SessionRecording](https://docs.userback.io/reference/getsessionrecording.md): Retrieves a SessionRecording by ID
+- [List SessionRecordings](https://docs.userback.io/reference/listsessionrecordings.md): Lists available SessionRecordings
+- [List workflows](https://docs.userback.io/reference/listworkflows.md): List all workflows available
+- [Create a workflow](https://docs.userback.io/reference/createworkflow.md): Create a new workflow
+- [Update a workflow](https://docs.userback.io/reference/updateworkflow.md): Update a workflow
+- [Delete a workflow](https://docs.userback.io/reference/deleteworkflow.md): Delete a workflow
+
+## Changelog
+- [Userback Mobile SDK: Now With Surveys](https://docs.userback.io/changelog/userback-mobile-sdk-now-with-surveys.md)
+- [New Feature: Notification History](https://docs.userback.io/changelog/new-feature-notification-history.md)
+- [Merging Duplicate Feedback Just Got a Lot Faster](https://docs.userback.io/changelog/merging-duplicate-feedback-just-got-a-lot-faster.md)
+- [New Feature: Video Transcription](https://docs.userback.io/changelog/new-feature-video-transcription.md)
+- [New Feature: AI Context Search and Smarter Feedback Filters](https://docs.userback.io/changelog/new-feature-ai-context-search-and-smarter-feedback-filters.md)
+- [New Feature: Userback Insights](https://docs.userback.io/changelog/new-feature-userback-insights.md)
+- [New Feature: Capture Feedback Directly from Slack](https://docs.userback.io/changelog/new-feature-capture-feedback-directly-from-slack.md)
+- [Userback Mobile SDK: Collect Feedback from Native iOS and Android Apps](https://docs.userback.io/changelog/userback-mobile-sdk-collect-feedback-from-native-ios-and-android-apps.md)
+- [Userback MCP: Connect Your AI Tools to Userback](https://docs.userback.io/changelog/userback-mcp-connect-your-ai-tools-to-userback.md)
+- [AI Assist Update: Similar Feedback and AI Comment](https://docs.userback.io/changelog/ai-assist-update-similar-feedback-and-ai-comment.md)
