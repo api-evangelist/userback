@@ -119,17 +119,10 @@ paths:
           $ref: '#/components/responses/NotFound'
 components:
   parameters:
-    Filter:
-      name: filter
+    Limit:
+      name: limit
       in: query
-      description: Filter expression.
-      required: false
-      schema:
-        type: string
-    Page:
-      name: page
-      in: query
-      description: Page number for pagination.
+      description: Maximum number of items per page.
       required: false
       schema:
         type: integer
@@ -141,19 +134,21 @@ components:
       required: false
       schema:
         type: string
-    Limit:
-      name: limit
+    Page:
+      name: page
       in: query
-      description: Maximum number of items per page.
+      description: Page number for pagination.
       required: false
       schema:
         type: integer
         minimum: 1
-  responses:
-    NotFound:
-      description: Resource not found.
-    Unauthorized:
-      description: Missing or invalid Bearer token.
+    Filter:
+      name: filter
+      in: query
+      description: Filter expression.
+      required: false
+      schema:
+        type: string
   schemas:
     FeedbackComment:
       type: object
@@ -164,6 +159,11 @@ components:
           type: string
         body:
           type: string
+  responses:
+    NotFound:
+      description: Resource not found.
+    Unauthorized:
+      description: Missing or invalid Bearer token.
   securitySchemes:
     BearerAuth:
       type: http
