@@ -1,0 +1,34 @@
+slug: userback
+provider: Userback
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Feedback
+  spec_file: userback-feedback-api-openapi.yml
+  capability_id: BC-430.50
+  capability_id_l1: BC-430
+  capability_name: Customer Feedback Management
+  confidence: 0.75
+  evidence: 'GET /feedback  listFeedback  List feedback; vendor: ''customer feedback platform that captures
+    visual feedback, screenshots, screen recordings, and bug reports'''
+  reason: Operations create and list customer feedback items captured from in-product widgets — voice-of-customer
+    capture. Some ambiguity with product feedback/telemetry framing, hence 0.75.
+- tag: Feedback Comments
+  spec_file: userback-feedback-comments-api-openapi.yml
+  capability_id: BC-430.50
+  capability_id_l1: BC-430
+  capability_name: Customer Feedback Management
+  confidence: 0.7
+  evidence: POST /feedback/comment  createFeedbackComment  Create feedback comment
+  reason: Comment thread CRUD attached to customer feedback items; supports triage and dialogue on captured
+    feedback, so same customer feedback capability, slightly lower confidence as it is a sub-resource.

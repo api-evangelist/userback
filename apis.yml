@@ -106,6 +106,9 @@ apis:
   - type: OpenAPI
     url: openapi/userback-projects-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/userback-capability-edges.yml
+    name: Userback Business Capability Map
   - type: AgenticAccess
     url: agentic-access/userback-agentic-access.yml
   - type: DomainSecurity
