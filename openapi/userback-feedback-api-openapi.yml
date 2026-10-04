@@ -64,21 +64,6 @@ paths:
           $ref: '#/components/responses/Unauthorized'
 components:
   parameters:
-    Limit:
-      name: limit
-      in: query
-      description: Maximum number of items per page.
-      required: false
-      schema:
-        type: integer
-        minimum: 1
-    Sort:
-      name: sort
-      in: query
-      description: Sort expression.
-      required: false
-      schema:
-        type: string
     Page:
       name: page
       in: query
@@ -94,6 +79,24 @@ components:
       required: false
       schema:
         type: string
+    Sort:
+      name: sort
+      in: query
+      description: Sort expression.
+      required: false
+      schema:
+        type: string
+    Limit:
+      name: limit
+      in: query
+      description: Maximum number of items per page.
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+  responses:
+    Unauthorized:
+      description: Missing or invalid Bearer token.
   schemas:
     Feedback:
       type: object
@@ -104,9 +107,6 @@ components:
           type: string
         description:
           type: string
-  responses:
-    Unauthorized:
-      description: Missing or invalid Bearer token.
   securitySchemes:
     BearerAuth:
       type: http
