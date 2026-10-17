@@ -39,6 +39,9 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
+  responses:
+    NotFound:
+      description: Resource not found.
   schemas:
     Project:
       type: object
@@ -47,9 +50,6 @@ components:
           type: string
         name:
           type: string
-  responses:
-    NotFound:
-      description: Resource not found.
   securitySchemes:
     BearerAuth:
       type: http
