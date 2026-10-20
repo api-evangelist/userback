@@ -28,6 +28,19 @@
     builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
+- slug: userback-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/AFDTCN2BX-userback
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: userback-wordpress-own
   label: WordPress (own)
   partner: wordpress
@@ -41,15 +54,15 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: userback-slack-own
-  label: Slack (own)
-  partner: slack
-  partner_name: Slack (own)
-  category: Slack app
+- slug: userback-zendesk-own
+  label: Zendesk (own)
+  partner: zendesk
+  partner_name: Zendesk (own)
+  category: Product and Project Management
   type: marketplace
   marketplace: own
   channel: partner-built
-  evidence: https://slack.com/marketplace/AFDTCN2BX-userback
+  evidence: https://www.zendesk.com/marketplace/apps/support/324938/userback/
   source: edge
   relationship: platform-app
   status: not-a-workflow
