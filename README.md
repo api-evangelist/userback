@@ -1,4 +1,4 @@
-# Userback (userback)
+# Userback
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,60 +66,112 @@
 
 Userback is a customer feedback platform that captures visual feedback, screenshots, screen recordings, and bug reports directly from in-product widgets installed on websites and web applications. The platform offers feedback boards, session replays, and integrations with project management and developer tools to streamline customer-driven product development. Userback's REST API uses Bearer token authentication for managing feedback, projects, users, and account data.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/userback/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/userback/refs/heads/main/apis.yml)
+**Areas:** Customer Feedback · Bug Reporting · Visual Feedback · Session Replay · Product Management · Software-as-a-Service
 
-## Scope
+## Userback on APIs.io
 
-- **Type:** Index
+Everything profiled for Userback is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/userback/](https://apis.io/providers/userback/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Customer Feedback
-- Bug Reporting
-- Visual Feedback
-- Session Replay
-- Product Management
-- SaaS
+- [Userback REST API](https://apis.io/apis/userback/rest-api/) — REST API for managing Userback feedback items, projects, users, tags, and account resources. Uses Bearer token authentication; partner integrations use an…
+- [Userback Feedback API](https://apis.io/apis/userback/userback-feedback-api/) — Feedback items captured by Userback widgets.
+- [Userback Feedback Comments API](https://apis.io/apis/userback/userback-feedback-comments-api/) — Comments attached to feedback items.
+- [Userback Projects API](https://apis.io/apis/userback/userback-projects-api/) — Userback projects (workspaces grouping feedback widgets).
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Userback REST API
+Model Context Protocol servers that expose the API to agents.
 
-REST API for managing Userback feedback items, projects, users, tags, and account resources. Uses Bearer token authentication; partner integrations use an X-Partner-Code header.
+- [userback](https://apis.io/servers/userback/userback/)
 
-- **Human URL:** [https://docs.userback.io/reference](https://docs.userback.io/reference)
-- **Base URL:** `https://rest.userback.io/1.0`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Customer Feedback
-- Bug Reporting
-- Visual Feedback
+- [Userback Agentic Access](https://apis.io/agentic-access/userback/userback-agentic-access/)
 
-#### Properties
+#### Collections (4)
 
-- [Documentation](https://docs.userback.io/reference)
-- [Authentication](https://docs.userback.io/reference/authentication)
-- [Overview](https://docs.userback.io/reference/overview)
-- [Postman Collection](collections/userback.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/userback.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Userback REST API](https://apis.io/collections/userback/open-userback/)
+- [Userback REST Feedback API](https://apis.io/collections/userback/open-userback-feedback-api/)
+- [Userback REST Feedback Feedback Comments API](https://apis.io/collections/userback/open-userback-feedback-comments-api/)
+- [Userback REST Feedback Projects API](https://apis.io/collections/userback/open-userback-projects-api/)
 
-- [GitHub Organization](https://github.com/userback)
-- [LinkedIn](https://www.linkedin.com/company/userback)
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Userback Authentication](https://apis.io/security/userback/userback-authentication/)
+- [Userback Domain Security](https://apis.io/security/userback/userback-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.userback.io)
 - [Documentation](https://docs.userback.io)
 - [Pricing](https://www.userback.io/pricing)
-- [Sign Up](https://app.userback.io/signup)
-- [L L Ms Txt](https://docs.userback.io/llms.txt)
+- [Blog](https://www.userback.io/blog)
+- [GitHub](https://github.com/userback)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 27.7** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 54.8 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 13.1 |
+| Access clarity | 23.7 |
+
+**Agent readiness 33.3** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | paginated |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/userback/](https://apis.io/providers/userback/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Userback: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/userback/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
